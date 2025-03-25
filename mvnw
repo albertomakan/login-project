@@ -257,3 +257,6 @@ mv -- "$TMP_DOWNLOAD_DIR/$distributionUrlNameMain" "$MAVEN_HOME" || [ -d "$MAVEN
 
 clean || :
 exec_maven "$@"
+
+#Springboot local profile
+spring-boot:run -Dspring.profiles.active=local
